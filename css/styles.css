@@ -32,10 +32,7 @@ html {
 *::after {
   box-sizing: inherit;
 }
-*:hover,
-*:focus{
-  transition: transform var(--transition);
-}
+
 .list {
   font-weight: 500;
   margin: 0px;
@@ -131,6 +128,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   fill: currentColor;
+  transition: transform var(--transition);
+  transition-property: fill;
 }
 .icon-envelope-h:hover{
   fill: var(--accent-color);
@@ -146,6 +145,8 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   fill: currentColor;
+  transition: transform var(--transition);
+  transition-property: fill;
 }
 .icon-smartphone-h:hover{
   fill: var(--accent-color);
@@ -161,6 +162,8 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
+  transition: transform var(--transition);
+  transition-property: color;
 }
 .link:hover,
 .link:focus,
@@ -241,6 +244,8 @@ h1 {
   cursor: pointer;
   min-width: 136px;
   height: 30px;
+  transition: transform var(--transition);
+  transition-property: text-shadow, background-color;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -304,9 +309,6 @@ h1 {
 .icon-astronaut::before{
   background-image: url(../images/astronaut.svg);
 }
-
-
-
 
 .title .subject {
   font-weight: bold;
@@ -454,7 +456,8 @@ margin: 0px;
   width: 44px;
   height: 44px;
   fill: var(--border-clients);
-  
+  transition: transform var(--transition);
+  transition-property: fill, background;
 }
 .social-nav:hover,
 .social-nav:focus{
@@ -505,6 +508,9 @@ margin: 0px;
   fill: var(--border-clients);
   border: 1px solid var(--border-clients);
   border-radius: 4px;
+  transition: transform var(--transition);
+  transition-property: fill, border;
+  
 }
 .r-item:not(:last-child) {
   margin-right: 30px;
@@ -618,7 +624,8 @@ margin: 0px;
   height: 44px;
   fill: #fff;
   box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.1);
- 
+  transition: transform var(--transition);
+  transition-property: background;
 }
  
 .us-item:not(:last-child){
@@ -668,7 +675,6 @@ margin: 0px;
 
 .btnclose{
   position: absolute;
-  
   top: 8px;
   right: 8px;
   background-color: var(--primery-br-color);
@@ -710,6 +716,8 @@ margin: 0px;
   border: none;
   cursor: pointer;
   padding: 6px 22px;
+  transition: transform var(--transition);
+  transition-property: color, background, box-shadow;
 }
 
 .b-item:not(:last-child) {
@@ -738,6 +746,8 @@ margin: 0px;
 }
 .project-card{
   display: block;
+  transition: transform var(--transition);
+  transition-property: box-shadow;
   
 }
 .project-card:hover,
